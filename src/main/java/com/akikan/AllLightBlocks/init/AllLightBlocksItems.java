@@ -15,7 +15,7 @@ public class AllLightBlocksItems{
 
 	public static void init(){
 		ARMY_PROVISIONS = registerItem(new Item(), "army_provisions").setUnlocalizedName(
-				"army_provisions").setCreativeTab(AllLightBlocksTabs.tabAllLightBlocks);
+				"army_provisions").setCreativeTab(AllLightBlocksTabs.tabAllLightBlocksLumen16);
 	}
 
 	public static Item registerItem(
@@ -35,6 +35,7 @@ public class AllLightBlocksItems{
 
 	public static void registerRender(Item item){
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(
-				item, 0, new ModelResourceLocation(item.getRegistryName(), "inventry"));
+				item, 0, new ModelResourceLocation(item.getRegistryName(), "inventry")
+		                                                                      );
 	}
 }

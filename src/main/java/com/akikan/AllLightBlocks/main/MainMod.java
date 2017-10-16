@@ -35,6 +35,7 @@ public class MainMod{
 
 	@EventHandler
 	public void posInit(FMLPostInitializationEvent event){
+
 		proxy.posInit(event);
 	}
 }

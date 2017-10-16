@@ -9,7 +9,7 @@ public class BlockEmptyBox extends Block{
 		super(Material.WOOD);
 		setRegistryName("block_empty_box");
 		setUnlocalizedName("block_empty_box");
-		setCreativeTab(AllLightBlocksTabs.tabAllLightBlocks);
+		setCreativeTab(AllLightBlocksTabs.tabAllLightBlocksLumen16);
 
 	}
 }

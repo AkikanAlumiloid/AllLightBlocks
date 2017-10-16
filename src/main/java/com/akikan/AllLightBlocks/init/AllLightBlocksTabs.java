@@ -5,9 +5,15 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
 
-
 public class AllLightBlocksTabs{
-	public static final CreativeTabs tabAllLightBlocks = new CreativeTabs(Reference.CREATIVE_TAB_NAME){
+	public static final CreativeTabs tabAllLightBlocksLumen16 = new CreativeTabs(Reference.CREATIVE_TAB_NAME_LUMEN16){
+		@Override
+		public Item getTabIconItem(){
+			return AllLightBlocksItems.ARMY_PROVISIONS;
+		}
+	};
+
+	public static final CreativeTabs TabAllLightBlocksLumen8 = new CreativeTabs(Reference.CREATIVE_TAB_NAME_LUMEN8){
 		@Override
 		public Item getTabIconItem(){
 			return AllLightBlocksItems.ARMY_PROVISIONS;

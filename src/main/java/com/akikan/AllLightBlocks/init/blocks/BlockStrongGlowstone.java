@@ -10,7 +10,7 @@ public class BlockStrongGlowstone extends BlockGlowstone{
 		super(Material.SPONGE);
 		setRegistryName("strong_glowstone");
 		setUnlocalizedName("strong_glowstone");
-		setCreativeTab(AllLightBlocksTabs.tabAllLightBlocks);
+		setCreativeTab(AllLightBlocksTabs.tabAllLightBlocksLumen16);
 		setSoundType(SoundType.CLOTH);
 		setResistance(2000.0F);
 		setLightLevel(1.0F);

@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "wide_area:items/strong_glowstone"
-  }
-}
