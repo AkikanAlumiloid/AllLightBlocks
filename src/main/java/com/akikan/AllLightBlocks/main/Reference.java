@@ -14,4 +14,5 @@ public class Reference{
 	//以下AllLightBlocks用のstatic変数
 	public static final float LUMEN_16 = 1.0F;
 	public static final float LUMEN_8 = 0.5F;
+	public static final float LUMEN_0 = 0F;
 }
