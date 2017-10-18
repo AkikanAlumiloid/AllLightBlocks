@@ -1,0 +1,10 @@
+#item
+item.alllightblocks8icon.name=AllLightBlocks8Icon
+
+#tab
+itemGroup.AllLightBlocksLumen16=AllLightBlocksMOD_Lumen16
+itemGroup.AllLightBlocksLumen8=AllLightBlocksMOD_Lumen8
+itemGroup.AllLightBlocksLumen0=AllLightBlocksMOD_Lumen0
+
+#tile
+tile.strong_glowstone.name=strong_glowstone

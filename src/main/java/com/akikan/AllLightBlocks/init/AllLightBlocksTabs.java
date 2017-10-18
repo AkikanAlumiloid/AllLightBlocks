@@ -9,14 +9,14 @@ public class AllLightBlocksTabs{
 	public static final CreativeTabs tabAllLightBlocksLumen16 = new CreativeTabs(Reference.CREATIVE_TAB_NAME_LUMEN16){
 		@Override
 		public Item getTabIconItem(){
-			return AllLightBlocksItems.ARMY_PROVISIONS;
+			return AllLightBlocksItems.LUMEN16;
 		}
 	};
 
 	public static final CreativeTabs TabAllLightBlocksLumen8 = new CreativeTabs(Reference.CREATIVE_TAB_NAME_LUMEN8){
 		@Override
 		public Item getTabIconItem(){
-			return AllLightBlocksItems.ARMY_PROVISIONS;
+			return AllLightBlocksItems.LUMEN8;
 		}
 	};
 }

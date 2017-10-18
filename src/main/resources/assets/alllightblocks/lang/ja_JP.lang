@@ -1,0 +1,10 @@
+#item
+item.alllightblocks8icon.name=オールライトブロックタブアイテム
+
+#tab
+itemGroup.AllLightBlocksLumen16=オールライトブロックMOD_明るさ16
+itemGroup.AllLightBlocksLumen8=オールライトブロックMOD_明るさ8
+itemGroup.AllLightBlocksLumen0=オールライトブロックMOD_明るさ0
+
+#tile
+tile.strong_glowstone.name=黄色い羊毛のようなグローストーン

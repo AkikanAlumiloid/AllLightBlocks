@@ -10,12 +10,16 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class AllLightBlocksItems{
 
-	// TODO 変数名をAllLightBlocksにふさわしいアイテム名に変える
-	public static Item ARMY_PROVISIONS;
+	// TODO このMOD用のクリエイティブタブ用にアイテムを登録し、タブの絵柄として登録させる
+	public static Item LUMEN16;
+	public static Item LUMEN8;
+	//	public static Item LUMEN0;
 
 	public static void init(){
-		ARMY_PROVISIONS = registerItem(new Item(), "army_provisions").setUnlocalizedName(
-				"army_provisions").setCreativeTab(AllLightBlocksTabs.tabAllLightBlocksLumen16);
+		LUMEN16 = registerItem(new Item(), "alllightblocks16icon").setUnlocalizedName("alllightblocks16icon")
+				.setCreativeTab(AllLightBlocksTabs.tabAllLightBlocksLumen16);
+		LUMEN8 = registerItem(new Item(), "alllightblocks8icon").setUnlocalizedName("alllightblocks8icon")
+				.setCreativeTab(AllLightBlocksTabs.TabAllLightBlocksLumen8);
 	}
 
 	public static Item registerItem(
@@ -30,12 +34,12 @@ public class AllLightBlocksItems{
 	}
 
 	public static void registerRender(){
-		registerRender(ARMY_PROVISIONS);
+				registerRender(LUMEN16);
+				registerRender(LUMEN8);
 	}
 
 	public static void registerRender(Item item){
-		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(
-				item, 0, new ModelResourceLocation(item.getRegistryName(), "inventry")
-		                                                                      );
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+				.register(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventry"));
 	}
 }
