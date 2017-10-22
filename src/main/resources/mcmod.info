@@ -2,7 +2,7 @@
 {
   "modid": "alllightblocks",
   "name": "AllLightBlocks",
-  "description": "This MOD is for my friends. ...really?",
+  "description": "現在クリエイティブのみでの使用を推奨",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "sorry, not yet",

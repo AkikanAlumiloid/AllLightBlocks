@@ -10,16 +10,24 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class AllLightBlocksItems{
 
-	// TODO このMOD用のクリエイティブタブ用にアイテムを登録し、タブの絵柄として登録させる
 	public static Item LUMEN16;
 	public static Item LUMEN8;
 	//	public static Item LUMEN0;
 
+	/*
+	* ここでminecraftでの名前を表示処理などを行う
+	* .setCreativeTab(<tabクラス>.<tab名>)　←でアイテムがどのタブに登録するかを決められる
+	* AllLightBlocksではアイテムが必要ないのでアイテムをタブ登録することはない
+	*
+	* */
 	public static void init(){
-		LUMEN16 = registerItem(new Item(), "alllightblocks16icon").setUnlocalizedName("alllightblocks16icon")
-				.setCreativeTab(AllLightBlocksTabs.tabAllLightBlocksLumen16);
-		LUMEN8 = registerItem(new Item(), "alllightblocks8icon").setUnlocalizedName("alllightblocks8icon")
-				.setCreativeTab(AllLightBlocksTabs.TabAllLightBlocksLumen8);
+
+		/*
+		* もしアイテムをタブに登録したいなら以下のようになる
+		* LUMEN16 = registerItem(new Item(), "alllightblocks16icon").setUnlocalizedName("alllightblocks16icon").setCreativeTab(AllLightBlocksTabs.tabAllLightBlocksLumen16);
+		* */
+		LUMEN16 = registerItem(new Item(), "alllightblocks16icon").setUnlocalizedName("alllightblocks16icon");
+		LUMEN8 = registerItem(new Item(), "alllightblocks8icon").setUnlocalizedName("alllightblocks8icon");
 	}
 
 	public static Item registerItem(
@@ -34,12 +42,14 @@ public class AllLightBlocksItems{
 	}
 
 	public static void registerRender(){
-				registerRender(LUMEN16);
-				registerRender(LUMEN8);
+		registerRender(LUMEN16);
+		registerRender(LUMEN8);
 	}
 
 	public static void registerRender(Item item){
-		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
-				.register(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventry"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0,
+				new ModelResourceLocation(
+						item.getRegistryName(),
+						"inventory"));
 	}
 }
