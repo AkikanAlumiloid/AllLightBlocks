@@ -1,0 +1,6 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "normal": "blocks/stonebrick"
+  }
+}

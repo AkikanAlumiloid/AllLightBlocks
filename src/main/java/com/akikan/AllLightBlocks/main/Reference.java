@@ -3,7 +3,7 @@ package com.akikan.AllLightBlocks.main;
 public class Reference{
 	public static final String MOD_ID = "alllightblocks";
 	public static final String MOD_NAME = "AllLightBlocksMod";
-	public static final String MOD_VERSION = "0.5.0";
+	public static final String MOD_VERSION = "0.0.1";
 
 	public static final String CLIENT_PROXY_CLASS = "com.akikan.AllLightBlocks.Proxy.ClientProxy";
 	public static final String COMMON_PROXY_CLASS = "com.akikan.AllLightBlocks.Proxy.CommonProxy";
