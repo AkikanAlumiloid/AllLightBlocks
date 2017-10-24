@@ -11,7 +11,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class AllLightBlocksItems{
 
 	public static Item LUMEN16;
-	public static Item LUMEN8;
+//	public static Item LUMEN8;
 	//	public static Item LUMEN0;
 
 	/*
@@ -27,7 +27,7 @@ public class AllLightBlocksItems{
 		* LUMEN16 = registerItem(new Item(), "alllightblocks16icon").setUnlocalizedName("alllightblocks16icon").setCreativeTab(AllLightBlocksTabs.tabAllLightBlocksLumen16);
 		* */
 		LUMEN16 = registerItem(new Item(), "alllightblocks16icon").setUnlocalizedName("alllightblocks16icon");
-		LUMEN8 = registerItem(new Item(), "alllightblocks8icon").setUnlocalizedName("alllightblocks8icon");
+//		LUMEN8 = registerItem(new Item(), "alllightblocks8icon").setUnlocalizedName("alllightblocks8icon");
 	}
 
 	public static Item registerItem(
@@ -43,7 +43,7 @@ public class AllLightBlocksItems{
 
 	public static void registerRender(){
 		registerRender(LUMEN16);
-		registerRender(LUMEN8);
+//		registerRender(LUMEN8);
 	}
 
 	public static void registerRender(Item item){
